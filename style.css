@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* Apply to all */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #151515;
+}
+
+/* Navbar */
+
+.navbars{
+    display: flex;
+    padding: 8px 4%;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+}
+.navbars ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.navbars li{
+    list-style-type: none;
+}
+.navbars a{
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+.navbars button{
+    background-image: url(./assets/asset\ 271.webp);
+    border: solid 1px #29323c;;
+    color: white;
+    border-radius: 8px;
+    font-family: 'poppins', sans-serif;
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+}
+.account{
+    align-items: center;
+}
+.account ul{
+    gap: 30px;
+}
+.account img{
+    width: 30px;
+}
+
+/* Slider */
+
+.adding1{
+    background-image: url(./assets/asset\ 11.webp);
+}
+.adding2{
+    background-image: url(./assets/asset\ 16.webp);
+}
+.adding3{
+    background-image: url(./assets/asset\ 19.webp);
+}
+.adding4{
+    background-image: url(./assets/asset\ 22.webp);
+}
+.adding5{
+    background-image: url(./assets/asset\ 25.webp);
+}
+
+.extra{
+    height: 400px;
+    display: flex;
+    position: relative;
+    left: 10%;
+    padding-top: 250px;
+}
+.extra img{
+    height: 400px;
+    display: flex;
+    position: relative;
+    left: 10%;
+    padding-top: 250px;
+}
+
+/* Cards */
+
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    padding: 30px;
+    padding-top: 16px;
+    overflow-x: scroll;
+    gap: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    margin-left: 30px;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.card:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
+.card img{
+    width: 12vw;
+    min-width: 150px;
+    border-radius: 8px;
+}
+.card{
+    background-color: #151515;
+    min-width: 190px;
+}
+.change{
+    gap: 210px;
+}
+.change .card img{
+    width: 24vw;
+}
+
+/* TOP TEXT */
+
+.top-text h3{
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 60px;
+    padding-top: 2%;
+}
+
+/* Advertisement */
+
+.add{
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    border-radius: 8px;
+}
+.add img{
+    border-radius: 16px;
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+    color: white;
+}
+.link{
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    text-align: center;
+}
+.link2{
+    padding-top: 0;
+}
+.link-item p{
+    font-family: 'Poppins', sans-serif;
+}
+.link-item a{
+    color: #aaaaaa;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sub-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    align-items: center;
+}
+.copyright p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.copyright h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-top: 40px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 900px) {
+
+.links a{
+    display: none;
+}   
+.navbars{
+    justify-content: space-around;
+    padding: 6px 0%;
+    align-items: center;
+    width: 100%;
+    display: flex;
+} 
+.navbars ul{
+    gap: 8px;
+    padding-left: 0;
+}
+.account ul{
+    padding-left: 0;
+}
+.add{
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.add img{
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.cards{
+    margin-left: 0;
+}
+.top-text h3{
+    margin-left: 30px;
+}
+.cards{
+    gap: 12px;
+}
+.card{
+    min-width: 150px;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+}
+.link-item{
+    margin-bottom: 20px;
+}
+.sub-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.app{
+    margin: 20px 0px;
+}
+.media{
+    margin: 20px 0px;
+}
+.media img{
+    margin: 8px;
+}
+}
